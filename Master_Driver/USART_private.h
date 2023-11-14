@@ -1,0 +1,42 @@
+/**
+ * 	File name: USART_private.h
+ *  Created on: Sep 26, 2023
+ *  Author: Eng. Mahmoud Sayed
+ **/
+
+#ifndef MCAL_USART_USART_PRIVATE_H_
+#define MCAL_USART_USART_PRIVATE_H_
+
+
+
+#define USART_ASYNC_MODE			(0)
+#define USART_SYNC_MODE				(1)
+#define USART_MODE_MASK				(0b10111111)
+
+#define USART_STOP_BIT_1			(0)
+#define USART_STOP_BIT_2			(1)
+#define USART_STOP_BIT_MASK			(0b11110111)
+
+#define USART_PARITY_DISABLE		(0)
+#define USART_PARITY_EVEN			(2)
+#define USART_PARITY_ODD			(3)
+#define USART_PARITY_MASK			(0b11001111)
+
+#define USART_DATA_SIZE_5_BITS		(0)
+#define USART_DATA_SIZE_6_BITS		(1)
+#define USART_DATA_SIZE_7_BITS		(2)
+#define USART_DATA_SIZE_8_BITS		(3)
+#define USART_DATA_SIZE_9_BITS		(7)
+#define USART_DATA_SIZE_MASK		(0b11111001)
+
+#define USART_CLOCK_POL_CONFIG_1	(0)
+#define USART_CLOCK_POL_CONFIG_2	(1)
+#define USART_CLOCK_POL_MASK		(0b11111110)
+
+#define USART_UDREI_ENABLE			(1)
+#define USART_UDREI_DISABLE			(0)
+#define USART_UDREI_MASK			(0b11011111)
+
+
+
+#endif /* MCAL_USART_USART_PRIVATE_H_ */
